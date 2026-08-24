@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    text-shadow: 2px 2px 3px hsl(227, 19%, 38%);
+}
+
+section {
+    aspect-ratio: 1/1;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position:top center;
+    display: block;
+}
+header {
+    color: #fdfdfd;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 22px;
+}
+main {
+    color: #ffffff;
+    width: 900px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px;
+    font-size: 35px;
+}
+
+
+
+.surface {
+    background-image: url(surface.png);
+}
+
+.subtitulo {
+    color: #ffffff;
+    width: 900px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 25px;
+    font-size: 30px;
+}
+.fatores_abioticos {
+    position: relative;
+    top: 150px;
+}
+.introducao_zonas {
+    position: relative;
+    top: 350px;
+}
+.ancora {
+    position: absolute;
+    top:1250px;
+    left:800px;
+    width: 100px;
+    height: 100px;
+}

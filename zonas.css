@@ -1,20 +1,23 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
+
 
 
 body {
     text-shadow: 2px 2px 3px hsl(227, 19%, 38%);
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 section {
-    aspect-ratio: 1/1;
+    width: 3840px;
+    height: 1920px;
     position: relative;
     background-repeat: no-repeat;
     background-position:top center;
-    background-size: cover;
     display: block;
 }
 header {
@@ -33,31 +36,41 @@ main {
     font-size: 35px;
 }
 
-
-
-.surface {
-    background-image: url(surface.png);
+.ancora_sumario {
+    position: fixed;
+    top: -5px;
+    left: 1600px;
+    z-index: 1000;
 }
 
-.subtitulo {
-    color: #ffffff;
-    width: 900px;
-    text-align: center;
-    margin: 0 auto;
-    padding: 25px;
-    font-size: 30px;
-}
-.fatores_abioticos {
-    position: relative;
-    top: 150px;
-}
-.introducao_zonas {
-    position: relative;
-    top: 350px;
+.ancora_botao {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
 }
 
-.epipelagica {
-    background-image: url("zona_epipelagica.png");
+.ancora_botao img {
+    width: 250px;
+    height: auto;
+}
+
+#sumario {
+    display: none;
+    margin-top: 10px;
+    padding: 20px;
+    background: #1a3853;
+    width: 220px;
+}
+
+#sumario a {
+    display: block;
+    color: white;
+    padding: 10px;
+}
+
+.epipelagica1 {
+    background-image: url("zona_ep.png");
 }
 
 .epipelagica header {
@@ -84,11 +97,14 @@ main {
     top: 300px;
 }
 
-.transicao_ep_meso {
-    background-image: url("transicao.png");
+.epipelagica2 {
+    background-color: #249BFC;
 }
-.mesopelagica {
-    background-image: url(zona_mesopelagica.png);
+.epipelagica3 {
+    background-image: linear-gradient(#249BFC,#0164B6)
+}
+.mesopelagica1 {
+    background-color: #0064B6;
 }
 .mesopelagica header {
     position: relative;
@@ -98,11 +114,16 @@ main {
      position: relative;
     top: 200px;
 }
-.transicao_bati {
-    background-image: url(transicao_bati.png);
+.mesopelagica2 {
+    background-image: linear-gradient(#0064B6,#023859);
 }
+.mesopelagica3 {
+    background-image: linear-gradient(#023859,#000000);
+}
+
 .batipelagica {
-    background-image: url(zona_batipelagica.png);
+    background-color: #000000;
+    height: 5760px;
 }
 .batipelagica header {
     position: relative;
@@ -116,10 +137,7 @@ main {
      position:absolute;
     top: 400px;
 }
-.transicao_abissal {
-    background-image: url(transicao_abissal.png);
-}
-.abissal {
+.abissal1 {
     background-image: url(zona_abissal.png);
 }
 .abissal header {
@@ -130,8 +148,9 @@ main {
     position: relative;
     top: 250px;
 }
-.transicao_hadal {
+.abissal2 {
     background-color: black;
+    height: 3840px;
 }
 .hadal {
     background-image: url(zona_hadal.png);
@@ -145,26 +164,22 @@ main {
     top: 250px;
 }
 .final {
-    background-color: #373e42;
+    background-color: #172226;
+    height:auto;
 }
 .referencias {
-    background-color: #373e42;
-}
-.ancora {
-    position: absolute;
-    top:1250px;
-    left:800px;
-    width: 100px;
-    height: 100px;
+    background-color: #172226;
+    height: auto;
 }
 .diabo_negro {
     position: absolute;
-    top: 100px;
-    left: 1500px;
+    top: 4000px;
+    left: 3200px;
     filter: saturate(30%) blur(1px);
 }
 .sifonoforo {
-    position: relative;
+    position: absolute;
+    left:800px;
     size-adjust: 1%;
 }
 .polvo_dumbo {
@@ -172,4 +187,14 @@ main {
     top:900px;
     size:10%;
     filter:saturate(30%) blur(2px);
+}
+.cachalote_lula {
+    position: absolute;
+    top:2000px;
+    left:1220px;
+}
+.peixe_palhaco {
+    position: absolute;
+    top: 600px;
+    left: 300px;
 }
