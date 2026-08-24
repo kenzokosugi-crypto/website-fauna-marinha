@@ -5,13 +5,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Influência dos Fatores abióticos na Fauna Marinha</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="zonas.css">
 
 </head>
-
+<script src="zonas.js"></script>
  <body>
- <section class="epipelagica">
-    <header>
+   
+   <div class="ancora_sumario">
+     <button class="ancora_botao" onclick=abrirsumario()>
+       <img src="ancora2.png" >
+     </button>
+ 
+     <div id="sumario">
+       <a href="#epipelagica">Zona Epipelágica</a>
+       <a href="#zona_oxigen">Zonas de Mínimo de Oxigênio</a>
+       <a href="#mesopelagica">Zona Mesopelágica</a>
+       <a href="#batipelagica">Zona Batipelágica</a>
+       <a href="#abissal">Zona Abissopelágica</a>
+       <a href="#hadal">Zona Hadopelágica</a>
+     </div>
+   </div>
+
+   <section class="epipelagica1" id="epipelagica">
+     <header>
       <h1>Zona Epipelágica</h1>
     </header>
     <main>
@@ -25,17 +41,22 @@
       </p>
       <div class="corais">
         <p>
-            Nessa zona, abriga-se maior estrutura viva do mundo: o Recife de corais, e nela abriga mais de 25% da fauna
+            Nessa zona, abriga-se a maior estrutura viva do mundo: o Recife de corais, e nela abriga mais de 25% da fauna
             marinha. É formada por colônias de pólipos, animais invertebrados do filo cnidária, que são denominados
             genericamente por coral. São importantes bioindicadores, uma vez que reagem fortemente a qualidade da água, não
             conseguindo sobreviver em águas poluídas.
         </p>
       </div>
     </main>
+    <div class="peixe_palhaco">
+      <a href="peixe_palhaco.html">
+        <img src="peixe_palhaco.png">
+      </a>
+    </div>
   </section>
   
   
-  <section class="transicao_ep_meso">
+  <section class="epipelagica2" id="zona_oxigen">
     <div class="min_oxigen">
     <header>
       <h1>Zonas de Mínimo de Oxigênio</h1>
@@ -53,7 +74,9 @@
   </div>
   </section>
 
-  <section class="mesopelagica">
+  <section class="epipelagica3"></section>
+
+  <section class="mesopelagica1" id="mesopelagica">
     <header>
       <h1>Zona Mesopelágica</h1>
     </header>
@@ -69,7 +92,9 @@
     </main>
   </section>
 
-  <section class="transicao_bati">
+  <section class="mesopelagica2"></section>
+
+  <section class="mesopelagica3">
     <div class="sifonoforo">
     <a href="sifonoforo.html">
       <img src="sifonoforo.png">
@@ -77,7 +102,7 @@
     </div>
   </section>
 
-  <section class="batipelagica">
+  <section class="batipelagica" id="batipelagica">
     <header>
       <h1>Zona Batipelágica</h1>
     </header>
@@ -98,12 +123,20 @@
             para atrair presas, ou olhos grandes, para enxergar silhuetas e reflexos mesmo no escuro.
             </p>
           </div>
-    </main>
-  </section>
+        </main>
+        <div class="diabo_negro">
+          <a href="diabo_negro.html">
+            <img src="peixediabo.png">
+          </a>
+        </div>
+        <div class="cachalote_lula">
+          <a href="cachalote_lula.html">
+            <img src="cachalote_lula.png">
+          </a>
+        </div>
+      </section>
 
-  <section class="transicao_abissal"></section>
-
-  <section class="abissal">
+  <section class="abissal1" id="abissal">
     <header>
       <h1>Zona Abissopelágica</h1>
     </header>
@@ -119,17 +152,11 @@
         <img src="polvodumbo.gif">
       </a>
     </div>
-    <div class="diabo_negro">
-      <a href="diabo_negro.html">
-        <img src="peixediabo.png">
-      </a>
-    </div>
   </section>
   
-  <section class="transicao_hadal">
-  </section>
+  <section class="abissal2"></section>
   
-  <section class="hadal">
+  <section class="hadal" id="hadal">
     <header>
       <h1>Zona Hadopelágica</h1>
     </header>
@@ -143,7 +170,7 @@
     </main>
   </section>
 
-  <div class="final">
+  <section class="final">
 <header>
   <h1>Você chegou até o Final!</h1>
 </header>
@@ -154,9 +181,9 @@
   <p>Felipe</p>
   <p>Guilherme Nascimento</p>
 </main>
-</div>
+  </section>
 
-<div class="referencias">
+<section class="referencias">
   <main>
   <h2>Referências</h2>
   <p><a href="https://www.noaa.gov/jetstream/ocean/layers-of-ocean" target="_blank">National Oceanic and Atmospheric Administration</a></p>
@@ -165,7 +192,7 @@
   <p><a href="https://brasilescola.uol.com.br/biologia/classificacao-dos-ambientes-marinhos.htm" target="_blank">brasi lescola</a></p>
   <p><a href="https://mundoeducacao.uol.com.br/biologia/fatores-bioticos-e-abioticos.htm" target="_blank">mundo educacao</a></p>
   </main>
-</div>
+</section>
   
 </body>
 
