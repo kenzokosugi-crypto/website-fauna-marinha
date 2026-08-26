@@ -59,4 +59,20 @@ main {
     left:800px;
     width: 100px;
     height: 100px;
+    z-index: 10;
+}
+
+.video-botao {
+    position: absolute;
+    right:1450px;
+    z-index: 999;
+    size: 50%;
+
+}
+#video {
+    display: none;
+}
+#video iframe {
+    width: 800px;
+    height:400px;
 }
