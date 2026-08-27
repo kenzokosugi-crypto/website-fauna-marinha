@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.pag_palhaco {
+    background-image: url(recife_fundo.png);
+    aspect-ratio: 1920/1080;
+    max-width: 1920px;
+    background-repeat: no-repeat;
+    background-position:top center;
+
+    text-shadow: 2px 2px 3px hsl(227, 19%, 38%);
+}
+.pag_palhaco header {
+    color: #fdfdfd;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 22px;
+
+    position: absolute;
+    left:400px;
+    top: 10px;
+
+}
+.pag_palhaco main {
+    color: #ffffff;
+    width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    font-size: 35px;
+
+    position: absolute;
+    left:300px;
+    top:120px;
+}
+.imag_palhaco {
+    position: absolute;
+    max-width: 200px;
+    max-height: 200px;
+    top:50px;
+    right:-200px;
+}
